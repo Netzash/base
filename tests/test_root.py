@@ -8,6 +8,6 @@ def test_read_main():
     try:
         response = client.get("/")
         assert response.status_code == 200
-        assert response.json() == {"Hello": "World"}
+        assert response.json() == {"Hola": "Mundo"}
     except NameError as er:
         print(er)
